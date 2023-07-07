@@ -23,15 +23,17 @@ O objetivo principal do trabalho é analisar a eficiência do código proposto p
 
 
 Artigo Científico (Relatório)
-[Artigo](https://github.com/pedroiff0/Feira-Brasileira-de-Ci-ncias-e-Engenharia---FEBRACE-2022/blob/main/AnaliseAglomeradoPT.pdf)
+
+- [Artigo](https://github.com/pedroiff0/Feira-Brasileira-de-Ci-ncias-e-Engenharia---FEBRACE-2022/blob/main/AnaliseAglomeradoPT.pdf)
 
 ---
 Pôster
-[Poster](https://github.com/pedroiff0/Feira-Brasileira-de-Ci-ncias-e-Engenharia---FEBRACE-2022/blob/main/Material%20de%20Divulga%C3%A7%C3%A3o/P%C3%B4sterPT.pdf)
+
+- [Poster](https://github.com/pedroiff0/Feira-Brasileira-de-Ci-ncias-e-Engenharia---FEBRACE-2022/blob/main/Material%20de%20Divulga%C3%A7%C3%A3o/P%C3%B4sterPT.pdf)
+
 ---
 
 Video de Apresentação do Projeto
-
 
 [Análise de Simulações Dinâmicas de Aglomerados de Galáxia em Fusão - FEBRACE 2023](https://youtu.be/r6YoSm7Yj_w)
 
