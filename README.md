@@ -23,11 +23,11 @@ O objetivo principal do trabalho é analisar a eficiência do código proposto p
 
 
 Artigo Científico (Relatório)
-
+[Artigo](https://github.com/pedroiff0/Feira-Brasileira-de-Ci-ncias-e-Engenharia---FEBRACE-2022/blob/main/AnaliseAglomeradoPT.pdf)
 
 ---
 Pôster
-
+[Poster](https://github.com/pedroiff0/Feira-Brasileira-de-Ci-ncias-e-Engenharia---FEBRACE-2022/blob/main/Material%20de%20Divulga%C3%A7%C3%A3o/P%C3%B4sterPT.pdf)
 ---
 
 Video de Apresentação do Projeto
@@ -79,15 +79,15 @@ Códigos
 - Código Oficial do Dawson (2013) - Monte Carlo Merger Analysis Code (MCMAC)
     - Disponível publicamente em: <https://github.com/MCTwo/MCMAC>
     
-    [MCMAC.py](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/11baa7cd-0737-411a-905e-f69ba073e7a9/MCMAC.py)
+    [MCMAC.py](https://github.com/MCTwo/MCMAC)
     
 - Código utilizado para rodar o programa principal (MCMAC):
     
-    (inserir)
+    [CódigoMain]()
     
 - Código utilizado para fazer os gráficos de da saída do programa e comparação com a simulação:
     
-    [graficos.py](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bbb2346c-1a65-4ef1-b6b6-5e90b405ba32/graficos.py)
+    [graficos.py](https://github.com/pedroiff0/Feira-Brasileira-de-Ci-ncias-e-Engenharia---FEBRACE-2022/blob/main/C%C3%B3digos/graficos.py)
     
 
 ---
