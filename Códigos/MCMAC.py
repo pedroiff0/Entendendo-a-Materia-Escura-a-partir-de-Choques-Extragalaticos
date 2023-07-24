@@ -6,7 +6,6 @@ from __future__ import division
 import numpy
 import scipy.integrate
 import pickle
-import profiles
 import time
 import sys
 import cosmo
@@ -42,7 +41,7 @@ def randdraw(A,index=None):
             index = numpy.random.randint(N_A)
         a = A[index]
     elif N_A <2:
-        print 'MCMAC.randdraw: Error, parameter input array is not a valid size, exiting'
+        print ('MCMAC.randdraw: Error, parameter input array is not a valid size, exiting')
         sys.exit()
     return a, index
 
@@ -91,10 +90,10 @@ def TSMptpt(m_1,m_2,r_200_1,r_200_2,d_end,E):
         integral = scipy.integrate.quad(lambda x: f(x,E,C),d_start,d_end)[0]
         t = numpy.sqrt(mu/2)*integral/sinGyr*kminMpc        
     else:
-        print 'TSMptpt: error total energy should not be > 0, exiting'
+        print ('TSMptpt: error total energy should not be > 0, exiting')
         sys.exit()
     if t < 0:
-        print 'TSM < 0 encountered'    
+        print ('TSM < 0 encountered'  )  
     return t
       
 
@@ -239,47 +238,47 @@ def MCengine(N_mc,M1,M2,Z1,Z2,D_proj,prefix,C1=None,C2=None,del_mesh=100,TSM_mes
     N_M1 = numpy.size(M1)
     N_M2 = numpy.size(M2)
     if N_M1 != N_M2:
-        print 'MCMAC.MCengine: Error, the mass inputs for the two halos must \
+        print ('MCMAC.MCengine: Error, the mass inputs for the two halos must \
             be the same type and size. For example, you cannot mix input \
             format (mu, sigma) for halo1 with (1D array of floats) format \
             for halo 2. Nor can the size of the (1D array of floats) input \
             be different. This is to facilitate correct covariance handeling. \
-            Exiting.' 
+            Exiting.' )
         sys.exit()
     
     if C1 != None or C2 != None:
         N_C1 = numpy.size(C1)
         N_C2 = numpy.size(C2)
         if N_C1 != N_M1 or N_C2 != N_M2:
-            print 'MCMAC.MCengine: Error, the concentration inputs for the two \
+            print ('MCMAC.MCengine: Error, the concentration inputs for the two \
             halos must be the same type and size as the mass inputs. For \
             example, you cannot mix input format (mu, sigma) for M1 with \
             (1D array of floats) format for C1, or vise versa. Nor can the size\
             of the (1D array of floats) input be different. This is to \
-            facilitate correct covariance handeling. Exiting.'
+            facilitate correct covariance handeling. Exiting.')
             sys.exit()
         elif N_M1 > 2:
-            print 'MCMAC.MCengine: Assuming that the order and values of the \
+            print ('MCMAC.MCengine: Assuming that the order and values of the \
             C1 and C2 (1D array of floats) are correlated with the order and \
             values of the M1 and M2 (1D array of floats). This is meant to \
-            maintain proper covariance.'
+            maintain proper covariance.')
     
     N_D_proj = numpy.size(D_proj)
     if N_D_proj == N_M1:
-        print 'MCMAC.MCengine: Assuming that the order and values of the \
+        print ('MCMAC.MCengine: Assuming that the order and values of the \
         D_proj (1D array of floats) are correlated with the order and values of\
         the M1 and M2 (1D array of floats). This is meant to maintain proper\
         covariance.'
-        
+        )
     N_Z1 = numpy.size(Z1)
     if N_Z1 == N_D_proj:
-        print 'MCMAC.MCengine: Warning. It is currently assumed that the halo\
+        print( 'MCMAC.MCengine: Warning. It is currently assumed that the halo\
         redshifts and projected separation estimates are uncorrelated. \
-        Covariance will not be handled correctly.'
+        Covariance will not be handled correctly.')
     if N_Z1 >2 and N_Z1 == N_M1:
-        print 'MCMAC,MCengine: Warning. It is currently assumed that the halo \
+        print( 'MCMAC,MCengine: Warning. It is currently assumed that the halo \
         redshifts and mass estimates are uncorrelated. Covariance will not be \
-        handled correctly.'
+        handled correctly.')
         
     i = 0
     # Create the output arrays
@@ -331,7 +330,7 @@ def MCengine(N_mc,M1,M2,Z1,Z2,D_proj,prefix,C1=None,C2=None,del_mesh=100,TSM_mes
                 # assume D_proj is uncorrelated with M1 and M2
                 d_proj = D_proj[numpy.random.randint(N_d)]
         elif N_d < 3:
-            print 'MCMAC.MCengine: Error, D_proj parameter input array is not a valid size, exiting'
+            print ('MCMAC.MCengine: Error, D_proj parameter input array is not a valid size, exiting')
             sys.exit()
         d_proj = abs(d_proj)
         
@@ -455,7 +454,7 @@ def MCengine(N_mc,M1,M2,Z1,Z2,D_proj,prefix,C1=None,C2=None,del_mesh=100,TSM_mes
         TSM_1 = T-TSM_0        
 
         if TSM_0 < 0:
-            print 'TSM < 0 encountered'
+            print ('TSM < 0 encountered')
         
         # Write calculated merger parameters
         m_1_out[i] = m_1
@@ -481,8 +480,8 @@ def MCengine(N_mc,M1,M2,Z1,Z2,D_proj,prefix,C1=None,C2=None,del_mesh=100,TSM_mes
             del_t = time.time()-t_start
             t_total = N_mc*del_t/i
             eta = (t_total-del_t)/60
-            print 'Completed Monte Carlo iteration {0} of {1}.'.format(i,N_mc)
-            print '~{0:0.0f} minutes remaining'.format(eta)
+            print ('Completed Monte Carlo iteration {0} of {1}.').format(i,N_mc)
+            print ('~{0:0.0f} minutes remaining').format(eta)
 
     # Pickle the results of the MC analysis
     filename = prefix+'_m_1.pickle'
