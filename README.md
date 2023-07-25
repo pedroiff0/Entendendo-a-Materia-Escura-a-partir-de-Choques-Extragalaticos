@@ -45,7 +45,7 @@ Para utilizar o código (MCMAC), clone o repositório e entre na pasta "Códigos
 
 * [Vídeo Apresentação do Projeto](https://www.youtube.com/watch?v=pundlzXZo_w&feature=youtu.be)
 * [Artigo de Dawson](https://ui.adsabs.harvard.edu/abs/2013ApJ...772..131D/abstract)
-* [Artigo de ZuHone](hhttps://ui.adsabs.harvard.edu/abs/2018ApJS..234....4Z/abstract)
+* [Artigo de ZuHone](https://ui.adsabs.harvard.edu/abs/2018ApJS..234....4Z/abstract)
 * [Código de Dawson](https://github.com/MCTwo/MCMAC)
 * [Simulações de ZuHone](http://gcmc.hub.yt/fiducial/index.html)
 * [Árvore de Links](https://linktr.ee/studyp)
