@@ -29,7 +29,8 @@ Este projeto já participou:
 * [FEBRACE - 2022](https://virtual.febrace.org.br/2023/EXA/2816/)
 * [FEBIC - 2023]()
 * [MostraTec - 2023]()
-
+* [Ciência Jovem - 2023]()
+ 
 ## Como utilizar?
 O material encontra-se dividido em pastas, basta navegar e visualizar. 
 
