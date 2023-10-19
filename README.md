@@ -44,7 +44,7 @@ Para utilizar o código (MCMAC), clone o repositório e entre na pasta "Códigos
 
 ## Links Úteis:
 
-* [Vídeo Apresentação do Projeto](https://www.youtube.com/watch?v=pundlzXZo_w&feature=youtu.be)
+* [Vídeo Apresentação do Projeto](https://www.youtube.com/watch?v=FKoirgxkD6k&feature=youtu.be)
 * [Artigo de Dawson](https://ui.adsabs.harvard.edu/abs/2013ApJ...772..131D/abstract)
 * [Artigo de ZuHone](https://ui.adsabs.harvard.edu/abs/2018ApJS..234....4Z/abstract)
 * [Código de Dawson](https://github.com/MCTwo/MCMAC)
@@ -105,18 +105,7 @@ De forma resumida, é um método estatístico ou probabilístico para equações
 
 ---
 ### Artigo Científico (Relatório)
-
-- [Artigo FEBRACE](./AnaliseAglomeradoPT.pdf)
-- [Relatório FEBIC]()
-- [Relatório MostraTec]()
-
----
-### Pôsters
-
-- [Poster - FEBRACE](./Poster/PôsterPT.pdf)
-- [Poster - FEBIC](./)
-- [Poster - Mostratec](./)
-
+[Entendendo a Matéria Escura a partir de Choques Extragalácticos](https://github.com/pedroiff0/Entendendo-a-Materia-Escura-a-partir-de-Choques-Extragalaticos/blob/main/Entendendo%20a%20Mat%C3%A9ria%20Escura%20a%20partir%20de%20Choques%20Extragal%C3%A1cticos.pdf)
 ---
 ### Códigos
     
